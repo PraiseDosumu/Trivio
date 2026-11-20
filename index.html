@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivio</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Trivio</h1>
+        <div id="best-score-container">
+            Best Score: <span id="best-score">0</span>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="first-container" class="container">
+            <div class="category">
+                <h3>Select a category</h3>
+                <select id="category-select">
+                    <option value="">-- Choose an option --</option>
+                </select>
+            </div>
+
+            <div class="difficulty">
+                <h3>Select a difficulty level</h3>
+                <select id="difficulty-select">
+                    <option value="">-- Choose an option --</option>
+                </select>
+            </div>
+
+            <button id="start-quiz">Start Quiz</button>
+        </section>
+
+        <p id="loading-message" hidden>Loading...</p>
+
+        <div id="error-message" hidden>
+            <p>Unable to load questions.</p>
+            <button id="retry-btn">Try Again</button>
+        </div>
+
+        <section id="second-container" hidden>
+            <p id="question-number"></p>
+            <p id="timer">Time left: 15s</p>
+            <p id="score">Score: 0</p>
+            <div id="question"></div>
+            <div id="option"></div>
+        </section>
+
+        <section id="next-correct" hidden>
+            <button id="next">Next</button>
+        </section>
+
+        <section id="results-container" hidden>
+            <h2>Quiz Complete</h2>
+            <p id="final-score"></p>
+            <p id="final-percentage"></p>
+            <p id="performance-message"></p>
+            <button id="play-again">Play Again</button>
+        </section>
+    </main>
+</body>
+</html>
