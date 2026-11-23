@@ -33,7 +33,7 @@ body {
     margin: 20px auto;
     border-radius: 8px;
     background-color: blue;
-    max-width: 250px;
+    max-width: 300px;
     padding: 0;
     padding-top: 1px;
 }
@@ -50,6 +50,10 @@ body {
     font-size: 16px;
 }
 
+option {
+    text-align: center;
+}
+
 #start-quiz {
     display: block;
     margin: 10px auto;
@@ -64,4 +68,33 @@ body {
     text-align: center;
     /* font-size: 18px; */
     margin: 10px;
+}
+
+#second-container {
+    margin: 20px auto;
+}
+
+#question-number, #timer, #score, #question {
+    text-align: center;
+}
+
+#option {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 10px;
+    /* flex-direction: row;
+    justify-content: space-around; */
+}
+
+#next-correct {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#results-container {
+    padding: 10px;
+    text-align: center;
 }
